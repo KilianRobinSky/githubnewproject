@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events (hoofdstuk 7)</title>
+        
+       </head>
+       <body>
+        <h1>Welcome</h1>
+
+Input: <input id="welcome1" type="text" />
+
+<button id="button">Click here</button>
+
+<script type="text/javascript">
+  const button = document.getElementById("button")
+  button.addEventListener("click", function() {
+    if (document.getElementById("welcome1").value === "hallo") {
+      alert("Welkom");
+    } else if (document.getElementById("welcome1").value === "doei") {
+      alert("Tot ziens");
+    }
+  })
+</script>   
+      </html>
